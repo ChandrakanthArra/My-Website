@@ -13,8 +13,8 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-
 <script type="text/javascript" src="script/script.js"></script>
+
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -44,7 +44,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p class="w3-large"><b><i class="fa fa-arrow-circle-o-down fa-fw w3-margin-right w3-text-teal"></i>Blogs</b></p>
           <a class="remove-line" href="Blog1.html"><p>DevOps</p></a>
           <a class="remove-line" href="Blog2.html"><p>Github</p></a>
-          <a class="remove-line" href="Blog4.html"><p><b>Ansible</b></p></a>
+          <a class="remove-line" href="Blog4.html"><p><b>Ansible</p></b></a>
           <a class="remove-line" href="Blog3.html"><p>Docker</p></a>
           
           <br>
@@ -58,34 +58,64 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Ansible</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Kubernetes</h2>
         
         <div class="w3-container">
           <h5  align = "justify" >
-            <div class="highlight"><div class="copy-code-icon" style="text-align:right"><a href="https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/application/deployment.yaml" download="application/deployment.yaml"><code>application/deployment.yaml</code></a>
-              <img src="https://d33wubrfki0l68.cloudfront.net/0901162ab78eb4ff2e9e5dc8b17c3824befc91a6/44ccd/images/copycode.svg" style="max-height:24px;cursor:pointer" onclick="copyCode('application-deployment-yaml')" title="Copy application/deployment.yaml to clipboard"></div><div class="includecode" id="application-deployment-yaml"><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:green;font-weight:700">apiVersion</span>:<span style="color:#bbb"> </span>apps/v1<span style="color:#bbb">
-              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">kind</span>:<span style="color:#bbb"> </span>Deployment<span style="color:#bbb">
-              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">metadata</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">name</span>:<span style="color:#bbb"> </span>nginx-deployment<span style="color:#bbb">
-              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">spec</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">selector</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">matchLabels</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">app</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
-              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">replicas</span>:<span style="color:#bbb"> </span><span style="color:#666">2</span><span style="color:#bbb"> </span><span style="color:#080;font-style:italic"># tells deployment to run 2 pods matching the template</span><span style="color:#bbb">
-              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">template</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">metadata</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">labels</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">app</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
-              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">spec</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">containers</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">      </span>- <span style="color:green;font-weight:700">name</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
-              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">image</span>:<span style="color:#bbb"> </span>nginx:1.14.2<span style="color:#bbb">
-              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">ports</span>:<span style="color:#bbb">
-              </span><span style="color:#bbb">        </span>- <span style="color:green;font-weight:700">containerPort</span>:<span style="color:#bbb"> </span><span style="color:#666">80</span><span style="color:#bbb">
-              </span></code></pre></div></div></div>
-           <h5 class="w3-opacity" align = "justify" ><p>Comming Soon</p>
-           </h5>  
-             
+            <table  width="100%">
+
+                <tr><td class="copy-to-clipboard-head">To Install kubernetes on Ubuntu</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command">apt-get install docker.io</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>  
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command0">apt-get update &amp;&amp; apt-get install -y apt-transport-https curl</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command0')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command1">curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command1')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command2">cat &lt;&lt;EOF&gt;/etc/apt/sources.list.d/kubernetes.list deb https://apt.kubernetes.io/ kubernetes-xenial main EOF
+</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command2')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command3">apt-get update</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command3')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command4">apt-get install -y kubelet kubeadm kubectl</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command4')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command5">apt-mark hold kubelet kubeadm kubectl</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command5')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command6"> kubeadm init --apiserver-advertise-address=10.0.1.8 --pod-network-cidr=192.168.0.0/16  --ignore-preflight-errors=NumCPU</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command6')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command7">mkdir -p $HOME/.kube</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command7')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command8"> sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config </span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command8')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command9">kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command9')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command10">kubectl get nodes</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command10')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+
+            </table>
           </h5>  
           <br>
         </div> 
@@ -110,7 +140,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
   <a href="https://github.com/ChandrakanthArra"><i class="fa fa-github w3-hover-opacity"></i></a>
   <a href="https://www.linkedin.com/in/chandrakanthreddy-arra-696271176?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZg%2BLjA%2BfTOavAnKNhDi4GA%3D%3D"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    
 
 </footer>
 
